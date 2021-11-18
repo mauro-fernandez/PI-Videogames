@@ -1,0 +1,7 @@
+.LandingApi {
+    display: flex;
+    align-self: auto;
+    text-align: center;
+    background-image: url(../Images/videogame.png);
+    background-color: blue;
+}

@@ -21,8 +21,8 @@ export default function HomePage() {
     }
  
     useEffect( () => {
-        dispatch(getAllVideogames)
-        dispatch(getAllGenres)
+        dispatch(getAllVideogames())
+        dispatch(getAllGenres())
     },[dispatch]) //ver bien esto
 
     function handleClick(event){
@@ -38,9 +38,11 @@ export default function HomePage() {
             </button>
             <div>
                 <select>
+                    <option value="genre">GENRE</option>        
+                </select>
+                <select>
                     <option value="all">ALL VIDEOGAMES</option>
                     <option value="custom">CUSTOM VIDEOGAMES</option>
-                    <option value="genre">GENRE</option>        
                 </select>
                 <select>
                     <option value="asc">A to Z</option>

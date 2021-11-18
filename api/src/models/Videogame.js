@@ -12,7 +12,7 @@ module.exports = (sequelize) => {
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false      
     },
     description: {
       type: DataTypes.TEXT,
@@ -22,7 +22,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING, // ver que viene como "released" : "2013-09-17", por ende viene como string y no como date
     },
     rating: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.FLOAT(2), // viene con 2 decimales "rating": 4.67
     },
     platforms: {
       type: DataTypes.ARRAY(DataTypes.STRING),
